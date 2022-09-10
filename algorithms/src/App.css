@@ -1,13 +1,15 @@
 .App {
   text-align: center;
   background: url('../src/assets/background/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .App-logo {
   height: 10vmin;
   pointer-events: none;
-  margin-top: -10vh;
-  margin-bottom: 20vh;
+  margin-top: -15vh;
+  margin-bottom: 5vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -55,4 +57,10 @@ fieldset{
 
 h5{
   margin: auto 2vw;
+}
+
+.algorithm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
