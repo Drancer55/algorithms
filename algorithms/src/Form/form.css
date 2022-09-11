@@ -1,0 +1,8 @@
+.number{
+    max-width: 50%;
+    min-width: 49%;
+    height: 5vh;
+    justify-content: center;
+    text-align: center;
+    padding: 1vh;
+}

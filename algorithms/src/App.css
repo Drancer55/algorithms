@@ -48,19 +48,16 @@ fieldset{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.operation{
-  display: flex;
-  flex-flow: column;
+  margin: 1.4vh auto;
 }
 
 h5{
-  margin: auto 2vw;
+    margin: auto 2vw;
 }
 
 .algorithm{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
 }

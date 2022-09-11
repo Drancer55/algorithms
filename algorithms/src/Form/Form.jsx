@@ -1,19 +1,19 @@
 import React, { useState } from "react";
+import { Algorithm } from "../Operations/Algorithm";
+import './form.css';
 
 const Form = () => {
         
     const [number, setNumber] = useState({
-        serie: '',
+        n: ''
     });
-
-    const handleChange = ({ target: {name, value} }) => {
-        setNumber({ ...number, [name]: value })
-        numbers();
+    
+    const handleChange = ({ target: { name, value } }) => {
+        setNumber({ ...number, [name]: value });
+        // const n = number.n;
+        Algorithm(number);
     };
 
-    const numbers = () => {
-        return number
-    }
 
     return(
         <div>
@@ -21,7 +21,14 @@ const Form = () => {
                 <fieldset>
                     <div className='operation'>
                         <label htmlFor="number">Ingresa un número:</label>
-                        <input type="number" min={0} name="n"/>
+                        <input
+                            type="number"
+                            min={0}
+                            name="n"
+                            id="n"
+                            onChange={handleChange}
+                            className="number"
+                        />
                     </div>
                 </fieldset>
             </form>
