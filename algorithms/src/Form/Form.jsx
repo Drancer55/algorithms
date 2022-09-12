@@ -1,19 +1,15 @@
 import React, { useState } from "react";
+import Algorithm from "../Operations/Algorithm";
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
+import './form.css';
 
 const Form = () => {
         
-    const [number, setNumber] = useState({
-        serie: '',
-    });
-
-    const handleChange = ({ target: {name, value} }) => {
-        setNumber({ ...number, [name]: value })
-        numbers();
+    const [n, setN] = useState(0);
+    
+    const handleChange = ({ target: { name, value } }) => {
+        setN(value);
     };
-
-    const numbers = () => {
-        return number
-    }
 
     return(
         <div>
@@ -21,9 +17,18 @@ const Form = () => {
                 <fieldset>
                     <div className='operation'>
                         <label htmlFor="number">Ingresa un número:</label>
-                        <input type="number" min={0} name="n"/>
+                        <input
+                            type="number"
+                            min={0}
+                            name="n"
+                            id="n"
+                            onChange={handleChange}
+                            className="number"
+                        />
                     </div>
                 </fieldset>
+                <h5> <EastOutlinedIcon/> </h5>
+                <Algorithm num={n}/>
             </form>
         </div>
     )

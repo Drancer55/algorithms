@@ -1,0 +1,16 @@
+.operations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.operation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h5{
+    margin: auto 2vw;
+}

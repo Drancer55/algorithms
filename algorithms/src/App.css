@@ -38,29 +38,23 @@
   }
 }
 
-form{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 fieldset{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.operation{
-  display: flex;
-  flex-flow: column;
+  text-align: center;
+  margin: 1.4vh auto;
+  height: 17vh;
+  width: max-content;
 }
 
 h5{
-  margin: auto 2vw;
+    margin: 0 auto;
 }
 
 .algorithm{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
 }
