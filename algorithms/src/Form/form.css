@@ -1,8 +1,17 @@
 .number{
-    max-width: 50%;
-    min-width: 49%;
+    max-width: 45%;
+    min-width: 44%;
     height: 5vh;
     justify-content: center;
     text-align: center;
     padding: 1vh;
+    font-size: 1.5rem;
+    text-shadow: black 1px 1px 1px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
 }

@@ -1,19 +1,15 @@
 import React, { useState } from "react";
-import { Algorithm } from "../Operations/Algorithm";
+import Algorithm from "../Operations/Algorithm";
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 import './form.css';
 
 const Form = () => {
         
-    const [number, setNumber] = useState({
-        n: ''
-    });
+    const [n, setN] = useState(0);
     
     const handleChange = ({ target: { name, value } }) => {
-        setNumber({ ...number, [name]: value });
-        // const n = number.n;
-        Algorithm(number);
+        setN(value);
     };
-
 
     return(
         <div>
@@ -31,6 +27,8 @@ const Form = () => {
                         />
                     </div>
                 </fieldset>
+                <h5> <EastOutlinedIcon/> </h5>
+                <Algorithm num={n}/>
             </form>
         </div>
     )

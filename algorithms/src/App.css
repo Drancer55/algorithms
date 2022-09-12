@@ -38,21 +38,18 @@
   }
 }
 
-form{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 fieldset{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 1.4vh auto;
+  height: 17vh;
+  width: max-content;
 }
 
 h5{
-    margin: auto 2vw;
+    margin: 0 auto;
 }
 
 .algorithm{
